@@ -1,0 +1,331 @@
+html{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height:100%;
+    margin:0px;
+    padding:0px;
+}
+#home{
+    box-sizing: border-box;
+    width:85%;
+    margin: 10% auto 0px auto;        
+    border:black 2px solid;
+    padding:10% 0px 8% 0px;
+    position:relative;
+}
+#home::after{
+    content: "";
+    position: absolute;
+    display: block;
+    background: inherit;
+    border-radius: inherit;
+    border: rgb(132, 0, 0) 2px solid;
+    left: 8%;
+    top: 12%;
+    width: 100%;
+    height: 100%;
+}
+#about{
+    margin-top:8%;
+    padding-top: 8%;
+    margin-bottom: 5%;
+}
+.link{
+    color:black;
+    font-weight:lighter;
+    padding:0px 0px 0px 10px;
+}
+.link:hover{
+    color:rgb(98, 0, 0);
+    font-weight: 230;
+}
+img{
+    width:45px;
+}
+#home h1{
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: 45px;
+    padding:0px;
+    /* font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; */
+}
+#home .home-row h3{
+    text-align: center;
+    color:rgba(132, 0, 0, 0.8);
+    font-weight: 300;
+}
+.about-row h3:after {
+content: "";
+display: block;
+width: 500px;
+height: 1px;
+background: rgb(132, 0, 0);
+right:-500px;
+top: 50%;
+position: absolute;
+}
+.about-row h3{
+max-width:60%;
+position: relative;
+width:fit-content;
+}
+#headshot{
+    width:70%;
+    max-width:300px;
+    margin-left:40px;
+    border: 1.5px black solid;
+    margin-top:5%;
+}
+.navbar{
+    background-color: rgba(255, 255, 255);
+    box-shadow: 1px .5px 10px rgba(0, 0, 0, 0.279);
+    height: 50px;
+}
+
+.project-div{
+    box-sizing: border-box;
+    border:solid 2px rgb(132, 0, 0);
+    width:auto;
+    border-radius: 25px;
+    height:380px;
+    padding:8%;
+    margin:10px 5px;
+}
+.project-div h5{
+    text-align: center;
+}
+.project-div p{
+    padding-top: 5px;
+    font-size: 15px;
+    color:rgb(97, 97, 97)
+}
+.project-div a{
+    color: rgb(132, 0, 0);
+}
+.project-div a:hover{
+    color: rgb(164, 0, 0);
+}
+.project-div .tool-row{
+    margin-top: 20px;
+}
+.project-div .tool{
+    color:white;
+    font-size: 12.5px;
+    background-color: rgb(132, 0, 0);
+    border-radius: 23px;
+    margin:2px 2px;
+    width: fit-content;
+}
+.content-row{
+    width:90%;
+    margin:0px auto;
+}
+#footer{
+    padding:10px 20px;
+    position: relative;
+    bottom:0%;
+    width:100%;
+    height:2.5px;
+    text-align: center;
+    color:rgb(132, 0, 0);
+}
+.tab {
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom:20px;
+    width:100%;
+    }
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: white;
+    float: left;
+    border:none;
+    border-bottom:solid 2px rgba(162, 162, 162, 0.685);
+    outline: none;
+    cursor: pointer;
+    width:25%;
+    transition: 0.3s;
+    padding: 5px 0px;
+    color:grey;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    /* border-top:solid 2px green; */
+    color:black;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    border-bottom:solid 2px rgb(132, 0, 0);
+    color:black;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    height:auto;
+    width:90%;
+    margin:0px auto;
+}
+.tabcontent h5{
+    cursor:pointer;
+    display:inline;
+}
+.default-tab{
+    display: block;
+}
+.drop-content{
+    width:auto;
+    padding:10px 0px;
+    padding-bottom: 15px;
+    border:none;
+}
+.bullet{
+    padding-bottom: 5px;
+    padding-left:30px;
+}
+
+.entry-div{
+    padding-bottom: 20px;
+}
+.about-text{
+    line-height: 1.7;
+    text-align: justify;
+    font-weight: 250;
+}
+.list-text{
+    list-style-type: circle;
+    font-weight: 250;
+    color:rgb(132, 0, 0);
+    font-size: 14px;
+}
+.list-awards{
+    list-style-type: circle;
+    /* font-weight: 250; */
+}
+.special-text{
+    color:rgb(132, 0, 0);
+    font-weight: 450;
+}
+.entry-div h5{
+    font-weight: normal;
+}
+
+:root {
+    --bg-color: white;
+    --typewriterSpeed: 4s;
+    --typewriterCharacters: 14;
+  }
+
+#home h1 {
+    font-family: 'Anonymous Pro', monospace;
+    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+    position: relative;
+    width:fit-content;
+    margin:0px auto;
+    font-weight: 600;
+  }
+
+  #home h1::before,
+  #home h1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  #home h1::before {
+    background: var(--bg-color);
+    animation: typewriter var(--typewriterSpeed)
+      steps(var(--typewriterCharacters)) 1s forwards;
+  }
+
+  #home h1::after {
+    width: 0.125em;
+    background: black;
+    animation: typewriter var(--typewriterSpeed)
+        steps(var(--typewriterCharacters)) 1s forwards,
+      blink 750ms steps(var(--typewriterCharacters)) 10;
+  }
+
+  @keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
+  .project-prev{
+    box-sizing: border-box;
+    width:auto;
+    height:100px;
+    max-width: 100%;
+    padding:5px;
+  }
+  .prev-div{
+    width:100%;
+    text-align: center;
+  }
+
+  #jobs{
+    padding: 50px 0px;
+  }
+
+
+
+                                             /* START RESPONSIVE STYLING */
+@media (max-width: 1007px) {
+    .about-row h3:after {
+        width: 300px;
+        right:-300px;
+    }
+    #headshot{
+        width:70%;
+        max-width:200px;
+        text-align: center;
+        margin-left:25%;
+    }
+    .navbar-collapse{
+        display:none;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .project-div .tool{
+        font-size: 12px;
+    }
+}
+@media (max-width: 640px) {
+    .about-row h3:after {
+        width: 200px;
+        right:-200px;
+    }
+    #home h1{
+        font-size: 30px;
+    } 
+    #home h3{
+        font-size: 22px;
+    }
+    #headshot{
+        width:50%;
+        text-align: center;
+        margin-left:25%;
+    }
+    .content-row{
+        width:85%;
+    }
+}
