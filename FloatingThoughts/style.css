@@ -1,0 +1,117 @@
+/* Main */
+body{
+    background-color: white;
+    color:#666666;
+}
+#inner{
+    margin: 0 auto;
+    padding: 70px 50px;
+}
+
+/* SideBar */
+#side-col{
+    padding-right: 5%;
+}
+#side-col #side-div{
+    margin-left:auto;
+    width:200px;
+}
+ #side-col #side-div #side{
+    width: 200px;
+    font-family: 'Quicksand', sans-serif;
+    border: 1px solid #80adbc;
+    background-color: #ffffffad;
+    top:30%;
+    position: fixed;
+}
+/* SideBar: Title */
+#side-col #side-div #side #title{
+    text-align: center;
+    font-weight: 400;
+    margin:0px;
+    background-color:#ebf6fa;
+    color:black;
+}
+#side-col #side-div #side #title p{
+    padding-top: 15px;
+}
+/* SideBar: Logo */
+#side-col #side-div #side #logo{
+    border-top: 1px solid #80adbc;
+}
+#side-col #side-div #side #logo img{
+    width:100%; 
+    padding:5% 0px;
+}
+#side-col #side-div #side #logo #logo-div{
+    width: 90%;
+    margin: 0px auto;   
+}
+/* SideBar: Description */
+#side #description{
+    margin:0px;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #80adbc;
+    font-family: 'Inconsolata', monospace;
+}
+/* SideBar: Links */
+#side-col #side-div #side #links{
+    font-size: 12px;
+    margin:0px;
+    border-top: 1px solid #80adbc;
+    padding:5px 0px;
+}
+a img{
+    width:120%;
+}
+.icon-name{
+    display: none;
+}
+a:hover + .icon-name{
+    display:block;
+}
+
+/* Content */
+#posts-col{
+    border-left: 1px dotted #a4c8d5;  
+}
+#posts-col .row{
+    width:90%;
+    margin:0px auto;
+}
+
+/* Misc. */
+.username{
+    font-weight: 400;
+    text-decoration: underline;
+    color:#80adbc;
+}
+.simple-btn{
+    background-color: #aed9ea;
+    border: 1px solid #80adbc;
+    font-size: 14px;
+    padding:5% 10%;
+}
+
+@media (max-width: 767px) {
+
+    #inner{
+        padding: 70px 30px;
+    }
+    #side-col{
+        padding:0px;
+    }
+    #side-col #side-div #side{
+        width: 140px;
+    }
+    #side-col #side-div #side #title{
+        font-size: 15px;
+    }
+    #side #description{
+        font-size: 13px;
+    }
+    .icon-name{
+        display: block;
+    }
+}
