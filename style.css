@@ -100,7 +100,7 @@ width:fit-content;
 }
 .project-div p{
     padding-top: 5px;
-    font-size: 15px;
+    font-size: 16px;
     color:rgb(97, 97, 97)
 }
 .project-div a{
@@ -308,7 +308,7 @@ width:fit-content;
         height: 60px;
     }
     .project-div .tool{
-        font-size: 12px;
+        font-size: 13.5px;
     }
 }
 @media (max-width: 640px) {
