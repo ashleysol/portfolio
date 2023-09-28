@@ -37,6 +37,7 @@ body{
     color:black;
     font-weight:lighter;
     padding:0px 0px 0px 10px;
+    font-size: 19px;
 }
 .link:hover{
     color:rgb(98, 0, 0);
@@ -199,12 +200,13 @@ width:fit-content;
     line-height: 1.7;
     text-align: justify;
     font-weight: 250;
+    font-size: 18px;
 }
 .list-text{
     list-style-type: circle;
     font-weight: 250;
     color:rgb(132, 0, 0);
-    font-size: 14px;
+    font-size: 18px;
 }
 .list-awards{
     list-style-type: circle;
@@ -220,7 +222,7 @@ width:fit-content;
 
 :root {
     --bg-color: white;
-    --typewriterSpeed: 4s;
+    --typewriterSpeed: 3s;
     --typewriterCharacters: 14;
   }
 
@@ -254,7 +256,7 @@ width:fit-content;
     background: black;
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
-      blink 750ms steps(var(--typewriterCharacters)) 10;
+      blink 1000ms steps(var(--typewriterCharacters)) 10;
   }
 
   @keyframes typewriter {
@@ -294,7 +296,7 @@ width:fit-content;
         right:-300px;
     }
     #headshot{
-        width:70%;
+        width:100%;
         max-width:200px;
         text-align: center;
         margin-left:25%;
@@ -324,6 +326,7 @@ width:fit-content;
         width:50%;
         text-align: center;
         margin-left:25%;
+        margin-top:0%;
     }
     .content-row{
         width:85%;
