@@ -1,19 +1,37 @@
+:root{
+    --primary-background: #FDF5E1;
+    --primary-text: #824101;
+    --secondary-text: #ac6620;
+    --primary-container: #C59A6F;
+}
 html{
     height: 100%;
     margin: 0;
     padding: 0;
 }
+#home-container{
+    width: 92%;
+    margin:auto;
+    margin-top: 125px;
+}
+#project-page{
+    margin-top: 125px;
+}
 body{
+    background-color: var(--primary-background);
+    font-family: 'Karla', sans-serif;
     height:100%;
     margin:0px;
     padding:0px;
+    font-size:19px;
+    color:var(--primary-text)
 }
 #home{
     box-sizing: border-box;
-    width:85%;
-    margin: 10% auto 0px auto;        
-    border:black 2px solid;
-    padding:10% 0px 8% 0px;
+    width:95%;
+    margin: 5% 0% 0% 0%;        
+    border:var(--primary-text) 3px solid;
+    padding:12% 0px 10% 0px;
     position:relative;
 }
 #home::after{
@@ -22,177 +40,102 @@ body{
     display: block;
     background: inherit;
     border-radius: inherit;
-    border: rgb(132, 0, 0) 2px solid;
-    left: 8%;
+    border: var(--secondary-text) 3px solid;
+    left: 5%;
     top: 12%;
     width: 100%;
     height: 100%;
 }
 #about{
-    margin-top:8%;
-    padding-top: 8%;
+    margin-top:10%;
     margin-bottom: 5%;
 }
-.link{
-    color:black;
-    font-weight:lighter;
-    padding:0px 0px 0px 10px;
-    font-size: 19px;
+.about-skills h4{
+    font-size: 1.5vw;
+    color:var(--secondary-text); 
 }
-.link:hover{
-    color:rgb(98, 0, 0);
-    font-weight: 230;
+.about-skills h3{
+    font-size: 2.1vw;
+    color:var(--secondary-text); 
 }
-img{
-    width:45px;
+button{
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color:var(--primary-background);
+    color: var(--primary-container);
+    border: solid 2px var(--primary-container);
+    margin:5px;
+}
+button:hover{
+    background-color: var(--primary-container);
+    color: var(--primary-background);
 }
 #home h1{
+    color: var(--primary-text);
     text-align: center;
     letter-spacing: 4px;
-    font-size: 45px;
     padding:0px;
-    /* font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace; */
+    font-weight:300;
 }
 #home .home-row h3{
     text-align: center;
-    color:rgba(132, 0, 0, 0.8);
+    color: var(--secondary-text);
     font-weight: 300;
+    font-size:3.4vw;
 }
 .about-row h3:after {
 content: "";
 display: block;
 width: 500px;
-height: 1px;
-background: rgb(132, 0, 0);
+height: 2px;
+background: var(--primary-text);
 right:-500px;
 top: 50%;
 position: absolute;
 }
 .about-row h3{
+color: var(--primary-text);
+font-size: 2.7vw;
 max-width:60%;
 position: relative;
 width:fit-content;
 }
 #headshot{
-    width:70%;
-    max-width:300px;
-    margin-left:40px;
-    border: 1.5px black solid;
-    margin-top:5%;
-}
-.navbar{
-    background-color: rgba(255, 255, 255);
-    box-shadow: 1px .5px 10px rgba(0, 0, 0, 0.279);
-    height: 50px;
+    border: 1.5px var(--primary-text) solid;
+    width:300px;
 }
 
 .project-div{
-    box-sizing: border-box;
-    border:solid 2px rgb(132, 0, 0);
-    width:auto;
-    border-radius: 25px;
-    height:380px;
-    padding:8%;
-    margin:10px 5px;
+    background-color: var(--primary-container);
+    opacity: 1;
+    box-sizing: border-box;;
+    padding: 0;
+    border: 0px var(--primary-text) solid;
 }
-.project-div h5{
-    text-align: center;
+.project-div img{
+    width:100%;
+    opacity: 1;
+    display: block;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
-.project-div p{
-    padding-top: 5px;
-    font-size: 16px;
-    color:rgb(97, 97, 97)
-}
-.project-div a{
-    color: rgb(132, 0, 0);
-}
-.project-div a:hover{
-    color: rgb(164, 0, 0);
-}
-.project-div .tool-row{
-    margin-top: 20px;
-}
-.project-div .tool{
-    color:white;
-    font-size: 12.5px;
-    background-color: rgb(132, 0, 0);
-    border-radius: 23px;
-    margin:2px 2px;
-    width: fit-content;
-}
+.project-div:hover img {
+    opacity: 0.15;
+  }
 .content-row{
     width:90%;
     margin:0px auto;
 }
-#footer{
-    padding:10px 20px;
+footer{
+    width:100%;
+    padding:2% 0px 2.5% 0px;
+    margin-top: 2%;
     position: relative;
     bottom:0%;
-    width:100%;
-    height:2.5px;
     text-align: center;
-    color:rgb(132, 0, 0);
+    border-top: 2px solid var(--primary-container);
 }
-.tab {
-    box-sizing: border-box;
-    overflow: hidden;
-    margin-top: 10px;
-    margin-bottom:20px;
-    width:100%;
-    }
-
-/* Style the buttons that are used to open the tab content */
-.tab button {
-    background-color: white;
-    float: left;
-    border:none;
-    border-bottom:solid 2px rgba(162, 162, 162, 0.685);
-    outline: none;
-    cursor: pointer;
-    width:25%;
-    transition: 0.3s;
-    padding: 5px 0px;
-    color:grey;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    /* border-top:solid 2px green; */
-    color:black;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    border-bottom:solid 2px rgb(132, 0, 0);
-    color:black;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    height:auto;
-    width:90%;
-    margin:0px auto;
-}
-.tabcontent h5{
-    cursor:pointer;
-    display:inline;
-}
-.default-tab{
-    display: block;
-}
-.drop-content{
-    width:auto;
-    padding:10px 0px;
-    padding-bottom: 15px;
-    border:none;
-}
-.bullet{
-    padding-bottom: 5px;
-    padding-left:30px;
-}
-
 .entry-div{
     padding-bottom: 20px;
 }
@@ -221,18 +164,18 @@ width:fit-content;
 }
 
 :root {
-    --bg-color: white;
+    --bg-color: var(--primary-background);
     --typewriterSpeed: 3s;
     --typewriterCharacters: 14;
   }
 
 #home h1 {
-    font-family: 'Anonymous Pro', monospace;
-    font-size: clamp(1rem, 3vw + 1rem, 4rem);
+/* font-size: clamp(6rem, 4vw + 4rem, 6rem); */
+    font-size: 7vw;
     position: relative;
     width:fit-content;
     margin:0px auto;
-    font-weight: 600;
+    font-weight: 400;
   }
 
   #home h1::before,
@@ -270,14 +213,6 @@ width:fit-content;
       background: transparent;
     }
   }
-
-  .project-prev{
-    box-sizing: border-box;
-    width:auto;
-    height:100px;
-    max-width: 100%;
-    padding:5px;
-  }
   .prev-div{
     width:100%;
     text-align: center;
@@ -286,8 +221,109 @@ width:fit-content;
   #jobs{
     padding: 50px 0px;
   }
+  #project-page h1{
+    font-size:4vw;
+    font-weight: 500;
+    padding-left: 0;
+  }
+  #project-page h2{
+    color: var(--secondary-text);
+    font-weight: 600;
+    padding-left: 0;
+  }
+  #project-page h4{
+    color: var(--secondary-text);
+    padding-left: 0;
+  }
+  #project-page a{
+    color: var(--secondary-text);
+    font-weight: 600;
+  }
+  #project-page a:hover{
+    color: var(--primary-text);
+  }
+  #project-page strong{
+    font-weight:600;
+    font-size: 18.5px;
+  }
+  .project-role-row{
+    border-bottom: 1.5px solid var(--secondary-text);
+  }
+  .project-info-row{
+    border-bottom: 1.5px solid var(--secondary-text);
+  }
+  .tool-row{
+    width:100%;
+  }
+  .tool{
+    display:inline-block;
+    background-color: var(--primary-container);
+    width:fit-content;
+    color: var(--primary-background);
+    margin: 5px 0px;
+  }
 
+  .project-gallery-row img{
+    width:100%;
+}
 
+#about img{
+    width:100%;
+}
+
+nav{
+    background-color: var(--primary-background);
+    margin:0px auto;
+    border-bottom: solid 2px var(--primary-container);
+}
+.navbar-light .navbar-nav .nav-link.active{
+ color: var(--primary-text);
+}
+.navbar-light .navbar-nav .nav-link{
+    color: var(--secondary-text);
+    font-size: 22px;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: var(--primary-container);
+    border-bottom:2px solid var(--primary-container);
+    padding-bottom: 0px;
+}
+.navbar-light .navbar-nav{
+    align-items: center;
+}
+
+nav img{
+    width:65px;
+}
+  .project-div{
+    position: relative;
+  }
+  .caption {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width:100%;
+    height:100%;
+    padding:20px;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+}
+.project-div:hover .caption {
+    opacity: 1;
+  }
+.caption .text{
+    color:var(--primary-background);
+    font-size:2.4vw;
+    text-shadow: -1px -1px 0 var(--primary-text), 1px -1px 0 var(--primary-text), -1px 1px 0 var(--primary-text), 1px 1px 0 var(--primary-text);
+    font-weight: 600;
+
+}
 
                                              /* START RESPONSIVE STYLING */
 @media (max-width: 1007px) {
@@ -295,20 +331,38 @@ width:fit-content;
         width: 300px;
         right:-300px;
     }
-    #headshot{
-        width:100%;
-        max-width:200px;
-        text-align: center;
-        margin-left:25%;
+    #home .home-row h3{
+        font-size:4vw;
     }
-    .navbar-collapse{
-        display:none;
+    .about-row h3{
+        font-size: 3.5vw;
     }
-    .navbar{
-        height: 60px;
+    #project-page h1{
+        font-size:6vw;
     }
-    .project-div .tool{
-        font-size: 13.5px;
+    .about-skills h4{
+        font-size: 2.3vw;;
+    }
+    .about-skills h3{
+        font-size: 2.8vw;;
+    }
+    nav{
+        border-bottom: none;
+        margin-left:2%;
+    }
+    .navbar-light .navbar-nav .nav-link{
+        border-bottom: 2px solid var(--primary-text);
+        padding:3px;
+        margin:5px;
+    }
+    .navbar-light .navbar-nav{
+        align-items: normal;
+    }
+    nav img{
+        display: none;
+    }
+    .caption .text{
+        font-size:2.5vw;
     }
 }
 @media (max-width: 640px) {
@@ -317,18 +371,33 @@ width:fit-content;
         right:-200px;
     }
     #home h1{
-        font-size: 30px;
+        font-size: 40px;
     } 
     #home h3{
         font-size: 22px;
     }
-    #headshot{
-        width:50%;
-        text-align: center;
-        margin-left:25%;
-        margin-top:0%;
-    }
     .content-row{
         width:85%;
+    }
+    #about img{
+        width:75%;
+    }
+    .about-skills h4{
+    font-size: 3vw;;
+    }
+    .about-skills h3{
+        font-size: 3.6vw;;
+        }
+    .about-row h3{
+        font-size: 4.5vw;
+    }
+    #home-container{
+        margin-top: 100px;
+    }
+    #project-page{
+        margin-top: 100px;
+    }
+    .caption .text{
+        font-size:5vw;
     }
 }
