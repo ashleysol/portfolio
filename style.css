@@ -163,6 +163,10 @@ footer{
     font-weight: normal;
 }
 
+.hidden{
+    display: none;
+}
+
 :root {
     --bg-color: var(--primary-background);
     --typewriterSpeed: 3s;
