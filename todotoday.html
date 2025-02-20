@@ -1,107 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ashley Perez | To-do Today</title>
     <link rel="icon" href="images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <script src="main.js"></script>
 </head>
+
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light fixed-top p-0">
-        <div class="container-fluid" >
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav w-75 py-1 justify-content-between">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/portfolio/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/portfolio/#work">Work</a>
-                </li>
-                <li class="nav-item">
-                <img src="images/logo.png">
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="/portfolio/about.html">About</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="mailto:ashleysolpm@gmail.com">Contact</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav w-75  justify-content-between">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/portfolio/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <img src="images/logo.png">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/portfolio/about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-card">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <div class="container" id="project-page">
-        <div class="row mt-5 justify-content-center project-info-row">
-            <div class="col-11 col-lg-6 ps-4 pe-5"> 
-                <div class="row">
-                    <h1>☀︎ To-Do Today ☀︎</h1>
-                </div>
-                <div class="row project-role-row pt-3">
-                    <h2>Role</h2>
-                    <h4>Full Stack Engineer, Designer</h4>
-                </div>
-                <div class="row pt-3 pb-2">
-                    <h2>Skills & Tools</h2>
-                    <div class="row tool-row">
-                        <div class="tool me-2">Angular</div>
-                        <div class="tool me-2">TypeScript</div>
-                        <div class="tool me-2">Node.js</div>
-                        <div class="tool me-2">MariaDB</div>
-                        <div class="tool me-2">Geolocation</div>
-                        <div class="tool me-2">Local Storage</div>
-                        <div class="tool me-2">phpMyAdmin</div>
-                        <div class="tool me-2">FileZilla</div>
-                        <div class="tool me-2">Figma</div>
-                    </div>
-                </div>
 
-                <div class="row pt-3 pb-2">
-                    <h4>Live Demo: </h4>
-                    <h4>GitHub Repo: <a href="https://github.com/ashleysol/oit-to-do-today" target="_blank">https://github.com/ashleysol/oit-to-do-today</a></h4>
-                </div>
-            </div>
-            <div class="col-11 col-lg-6 ps-lg-4"> 
-                <p><strong>Challenge: </strong>I still found myself writing random lists in my notes app despite having numerous to-do list apps. Existing tools overwhelm users with complicated functions, creating opportunity for the tools themselves to become methods of procrastination.
-                <br><br>
-                Solution: To-do Today is a 24-hour, visual. Mimicks brains natural organization methods, sequentially and visually. Easy hide all features and have a quick list experience as well.  Focus on preventing the app from becoming a way of procrastination from tasks. 
-                <br>
-            </div>
-        </div>
+    <div class="project-heading">
+        <p style="font-size: 70px;">To-Do Today</p>
+        <p style="font-size: 18px;">Role: Designer & Engineer    Github: <a style="color:white;" href="https://github.com/ashleysol/oit-to-do-today">View Repo</a>    Live Demo: ashleysol.com</p>
+    </div>
 
-        <div class="row mt-5 project-gallery-row justify-content-center">
-            <div class="col-11 col-lg-5 p-0 me-lg-2 mb-3"> 
-                <img src="images/grandma/4.jpg">
-            </div>
-            <div class="col-11 col-lg-5 p-0 ms-lg-2 mb-3" > 
-                <img src="images/grandma/1.png">
-            </div>
-            <div class="col-11 col-lg-5 p-0 me-lg-2 mb-3"> 
-                <img src="images/grandma/2.png">
-            </div>
-            <div class="col-11 col-lg-5 p-0 ms-lg-2 mb-3"> 
-                <img src="images/grandma/3.png">
-            </div>
-            <div class="row mt-2 justify-content-center">
-                <div class="col-6" style="text-align: center;">
-                   <a href="/portfolio/index.html#work"><button>Back to Projects</button></a>
-                </div>
-            </div> 
-        </div>
+    <div class="project-body">
+        <img style="width:100%; margin: 0px auto;" src="images/tdt/onepager.png">
     </div>
 
     <footer>
-        © Ashley S. Perez - 2023
+        © Ashley S. Perez - 2025
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

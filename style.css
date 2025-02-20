@@ -156,6 +156,28 @@ footer{
 }
 
 
+/* START PROJECT PAGES */
+.project-heading{
+    background-color: var(--secondary-text);
+    color:white;
+    height:30%;
+    width:100%;
+    margin-top: 50px;
+    padding:10px;
+    text-align: center;
+}
+
+.project-body{
+    margin: 0 auto;
+    width:75%;
+    text-align: center;
+}
+
+
+
+
+
+
 
 .entry-div{
     padding-bottom: 20px;
@@ -245,31 +267,6 @@ footer{
 
   #jobs{
     padding: 50px 0px;
-  }
-  #project-page h1{
-    font-size:4vw;
-    font-weight: 500;
-    padding-left: 0;
-  }
-  #project-page h2{
-    color: var(--secondary-text);
-    font-weight: 600;
-    padding-left: 0;
-  }
-  #project-page h4{
-    color: var(--secondary-text);
-    padding-left: 0;
-  }
-  #project-page a{
-    color: var(--secondary-text);
-    font-weight: 600;
-  }
-  #project-page a:hover{
-    color: var(--primary-text);
-  }
-  #project-page strong{
-    font-weight:600;
-    font-size: 18.5px;
   }
   .project-role-row{
     border-bottom: 1.5px solid var(--secondary-text);
