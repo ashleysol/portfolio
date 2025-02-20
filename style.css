@@ -1,3 +1,4 @@
+/* ALL STYLES */
 :root{
     --primary-background: #FDF5E1;
     --primary-text: #824101;
@@ -8,14 +9,7 @@ html{
     height: 100%;
     margin: 0;
     padding: 0;
-}
-#home-container{
-    width: 92%;
-    margin:auto;
-    margin-top: 125px;
-}
-#project-page{
-    margin-top: 125px;
+    font-family: 'Karla', sans-serif;
 }
 body{
     background-color: var(--primary-background);
@@ -23,15 +17,37 @@ body{
     height:100%;
     margin:0px;
     padding:0px;
-    font-size:19px;
+    font-size:17px;
     color:var(--primary-text)
+}
+button{
+    font-weight: 500;
+    font-size: 17px;
+    background-color:var(--primary-background);
+    color: var(--primary-container);
+    border: solid 2px var(--primary-container);
+}
+button:hover{
+    background-color: var(--primary-container);
+    color: var(--primary-background);
+}
+#project-page{
+    margin-top: 125px;
+}
+
+
+/* HOME */
+#home-container{
+    width: 67%;
+    margin:auto;
+    margin-top: 100px;
 }
 #home{
     box-sizing: border-box;
     width:95%;
     margin: 5% 0% 0% 0%;        
-    border:var(--primary-text) 3px solid;
-    padding:12% 0px 10% 0px;
+    border:var(--primary-text) 4px solid;
+    padding:7% 0px 5% 0px;
     position:relative;
 }
 #home::after{
@@ -40,36 +56,11 @@ body{
     display: block;
     background: inherit;
     border-radius: inherit;
-    border: var(--secondary-text) 3px solid;
+    border: var(--secondary-text) 4px solid;
     left: 5%;
     top: 12%;
     width: 100%;
     height: 100%;
-}
-#about{
-    margin-top:10%;
-    margin-bottom: 5%;
-}
-.about-skills h4{
-    font-size: 1.5vw;
-    color:var(--secondary-text); 
-}
-.about-skills h3{
-    font-size: 2.1vw;
-    color:var(--secondary-text); 
-}
-button{
-    font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    background-color:var(--primary-background);
-    color: var(--primary-container);
-    border: solid 2px var(--primary-container);
-    margin:5px;
-}
-button:hover{
-    background-color: var(--primary-container);
-    color: var(--primary-background);
 }
 #home h1{
     color: var(--primary-text);
@@ -82,60 +73,90 @@ button:hover{
     text-align: center;
     color: var(--secondary-text);
     font-weight: 300;
-    font-size:3.4vw;
-}
-.about-row h3:after {
-content: "";
-display: block;
-width: 500px;
-height: 2px;
-background: var(--primary-text);
-right:-500px;
-top: 50%;
-position: absolute;
-}
-.about-row h3{
-color: var(--primary-text);
-font-size: 2.7vw;
-max-width:60%;
-position: relative;
-width:fit-content;
-}
-#headshot{
-    border: 1.5px var(--primary-text) solid;
-    width:300px;
+    font-size:2.6vw;
 }
 
-.project-div{
-    background-color: var(--primary-container);
-    opacity: 1;
-    box-sizing: border-box;;
-    padding: 0;
-    border: 0px var(--primary-text) solid;
+/* ABOUT */
+main{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
 }
-.project-div img{
-    width:100%;
-    opacity: 1;
+#about{
+    margin-top:70px;
+    margin-bottom: 5%;
+}
+h2{
+    font-weight: 600;
+    font-size: 39px;
+}
+.heading-row h3{
+    color: var(--primary-text);
+    font-size: 2.3vw;
+    max-width:60%;
+    position: relative;
+    width:fit-content;
+}
+.heading-row h3:after {
+    content: "";
     display: block;
-    transition: .5s ease;
-    backface-visibility: hidden;
+    width: 500px;
+    height: 2.9px;
+    background: var(--secondary-text);
+    right:-500px;
+    top: 50%;
+    position: absolute;
 }
-.project-div:hover img {
-    opacity: 0.15;
-  }
 .content-row{
-    width:90%;
-    margin:0px auto;
+    
+    margin-left:3.5%;
+    justify-content: center;
+}
+.content-row h4{
+    color: var(--secondary-text);
+    font-size: 18px;
+    font-weight: 500;
+    padding-left:0px;
+}
+ h5{
+    color: var(--primary-container);
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/* START PORTFOLIO SECTION */
+.project-div{
+    border: 2px solid var(--primary-text);
+    padding:20px;
+    margin:5px 0px;
+    text-align: center;
+}
+
+
+/* START CONTACT & FOOTER */
+#contact-card{
+    width:45%;
+    height:400px;
+    margin:3% auto;
+    border: 3px solid var(--primary-text);
+    align-content: center;
+    text-align: center;
+    position: relative;
+    margin-bottom: -150px;
+    background-color: var(--bg-color);
 }
 footer{
+    z-index:0;
     width:100%;
-    padding:2% 0px 2.5% 0px;
-    margin-top: 2%;
-    position: relative;
-    bottom:0%;
+    height:25%;
     text-align: center;
-    border-top: 2px solid var(--primary-container);
+    background-color:  var(--primary-container);
+    color:white;
+    align-content: end;
 }
+
+
+
 .entry-div{
     padding-bottom: 20px;
 }
@@ -175,7 +196,7 @@ footer{
 
 #home h1 {
 /* font-size: clamp(6rem, 4vw + 4rem, 6rem); */
-    font-size: 7vw;
+    font-size: 5vw;
     position: relative;
     width:fit-content;
     margin:0px auto;
@@ -263,6 +284,7 @@ footer{
     display:inline-block;
     background-color: var(--primary-container);
     width:fit-content;
+    padding: 0px 5px;
     color: var(--primary-background);
     margin: 5px 0px;
   }
@@ -275,17 +297,19 @@ footer{
     width:100%;
 }
 
+/* START NAVBAR */
 nav{
     background-color: var(--primary-background);
     margin:0px auto;
-    border-bottom: solid 2px var(--primary-container);
+    border-bottom: solid 2px var(--secondary-text);
 }
 .navbar-light .navbar-nav .nav-link.active{
  color: var(--primary-text);
 }
 .navbar-light .navbar-nav .nav-link{
-    color: var(--secondary-text);
-    font-size: 22px;
+    color: var(--primary-text);
+    font-size: 20px;
+    font-weight:500;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color: var(--primary-container);
@@ -293,30 +317,33 @@ nav{
     padding-bottom: 0px;
 }
 .navbar-light .navbar-nav{
+    padding: 0px 160px;
     align-items: center;
 }
 
 nav img{
-    width:65px;
+    width:50px;
 }
-  .project-div{
-    position: relative;
-  }
-  .caption {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    width:100%;
-    height:100%;
-    padding:20px;
-    justify-content: space-between;
-    flex-direction: column;
-    display: flex;
+
+/* START PROJECT DIV */
+.project-div{
+position: relative;
+}
+.caption {
+transition: .5s ease;
+opacity: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+-ms-transform: translate(-50%, -50%);
+text-align: center;
+width:100%;
+height:100%;
+padding:20px;
+justify-content: space-between;
+flex-direction: column;
+display: flex;
 }
 .project-div:hover .caption {
     opacity: 1;
@@ -331,24 +358,16 @@ nav img{
 
                                              /* START RESPONSIVE STYLING */
 @media (max-width: 1007px) {
-    .about-row h3:after {
+    .heading-row h3:after {
         width: 300px;
         right:-300px;
     }
-    #home .home-row h3{
-        font-size:4vw;
-    }
-    .about-row h3{
-        font-size: 3.5vw;
-    }
+
     #project-page h1{
         font-size:6vw;
     }
-    .about-skills h4{
-        font-size: 2.3vw;;
-    }
-    .about-skills h3{
-        font-size: 2.8vw;;
+    main h3{
+        font-size: 2.8vw;
     }
     nav{
         border-bottom: none;
@@ -360,6 +379,7 @@ nav img{
         margin:5px;
     }
     .navbar-light .navbar-nav{
+        padding: 0px 50px;
         align-items: normal;
     }
     nav img{
@@ -370,7 +390,7 @@ nav img{
     }
 }
 @media (max-width: 640px) {
-    .about-row h3:after {
+    .heading-row h3:after {
         width: 200px;
         right:-200px;
     }
@@ -385,14 +405,12 @@ nav img{
     }
     #about img{
         width:75%;
+
     }
-    .about-skills h4{
-    font-size: 3vw;;
-    }
-    .about-skills h3{
-        font-size: 3.6vw;;
+    .main h3{
+        font-size: 3.6vw;
         }
-    .about-row h3{
+    .heading-row h3{
         font-size: 4.5vw;
     }
     #home-container{
@@ -403,5 +421,11 @@ nav img{
     }
     .caption .text{
         font-size:5vw;
+    }
+    main{
+        width: 95%;
+    }
+    #contact-card{
+        width:95%;
     }
 }
